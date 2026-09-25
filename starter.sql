@@ -1,5 +1,5 @@
 
-SET SERVEROUTPUT ON;
+
 DECLARE
     marks NUMBER := 65;
 BEGIN
