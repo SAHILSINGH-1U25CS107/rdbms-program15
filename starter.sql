@@ -1,11 +1,11 @@
 SET SERVEROUTPUT ON;
 DECLARE
-marks NUMBER := 65;
+    marks NUMBER := 65;
 BEGIN
-IF marks &gt;= 40 THEN
-DBMS_OUTPUT.PUT_LINE(&#39;Student has Passed&#39;);
-ELSE
-DBMS_OUTPUT.PUT_LINE(&#39;Student has Failed&#39;);
-END IF;
+    IF marks >= 40 THEN
+        DBMS_OUTPUT.PUT_LINE('Student has Passed');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Student has Failed');
+    END IF;
 END;
 /
