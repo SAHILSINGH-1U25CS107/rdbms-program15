@@ -1,16 +1,13 @@
 
-CREATE database sah1;
-use sah1;
+SET SERVEROUTPUT ON;
 
-DELIMITER //
-    CREATE PROCEDURE check_marks() 
-    BEGIN 
-    DECLARE marks INT DEFAULT 65; IF marks >= 40 THEN
-        SELECT 'Student has Passed'
-        AS Result;
-ELSE 
-    SELECT 'Student has Failed'
-    AS Result;
-END IF;
-END //
-    DELIMITER ;
+DECLARE
+    marks NUMBER := 65;
+BEGIN
+    IF marks >= 50 THEN
+        DBMS_OUTPUT.PUT_LINE('Student has Passed');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Student has Failed');
+    END IF;
+END;
+/
