@@ -1,3 +1,7 @@
+
+CREATE database sah1;
+use sah1;
+
 DELIMITER //
     CREATE PROCEDURE check_marks() 
     BEGIN 
@@ -10,4 +14,3 @@ ELSE
 END IF;
 END //
     DELIMITER ;
-CALL check_marks();
